@@ -78,7 +78,7 @@ abstract class BaseFixture extends Fixture
     }
 
     /**
-     * @param string $group
+     * @param string $groupName
      * @param int $count
      * @return array
      */
