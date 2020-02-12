@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "symfony/base-fixture\\": "src/symfony/BaseFixture"
+      "MansartEsteban\\Symfony\\BaseFixture\\": "src/symfony/BaseFixture"
     }
   }
 }
