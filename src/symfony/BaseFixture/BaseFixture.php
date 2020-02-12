@@ -82,10 +82,10 @@ abstract class BaseFixture extends Fixture
      * @param int $count
      * @return array
      */
-    public function getRandomReferences(string $group, int $count) {
+    public function getRandomReferences(string $groupName, int $count) {
         $references = [];
         while (count($references) < $count) {
-            $references[] = $this->getReference($group);
+            $references[] = $this->getReference($groupName);
         }
         return ($references);
     }
