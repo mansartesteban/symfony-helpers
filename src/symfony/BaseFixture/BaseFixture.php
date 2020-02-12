@@ -39,7 +39,7 @@ abstract class BaseFixture extends Fixture
     }
 
     protected function createMany(string $groupName, callable $factory, $count = null) {
-        $count = $count ?? $this->iter[get_class($this)] ?? 10;
+        $count = $count ?? 10;
         for ($i = 0 ; $i < $count ; $i++) {
             $entity = $factory($i);
             if (null === $entity) {
