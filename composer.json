@@ -10,7 +10,6 @@
       "email": "esteban.mansart@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
     "php": ">=7.3.0",
     "fzaninotto/faker": "^1.9",
