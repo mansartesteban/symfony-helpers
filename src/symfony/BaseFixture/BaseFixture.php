@@ -12,7 +12,6 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker\Factory;
 use Faker\Generator;
-use App\Faker\Providers\fr_FR\Accessories;
 
 abstract class BaseFixture extends Fixture
 {
@@ -38,6 +37,11 @@ abstract class BaseFixture extends Fixture
         $this->loadData($manager);
     }
 
+    /**
+     * @param string $groupName
+     * @param callable $factory
+     * @param null $count
+     */
     protected function createMany(string $groupName, callable $factory, $count = null) {
         $count = $count ?? 10;
         for ($i = 0 ; $i < $count ; $i++) {
@@ -52,6 +56,10 @@ abstract class BaseFixture extends Fixture
         }
     }
 
+    /**
+     * @param string $groupName
+     * @return mixed
+     */
     protected function getRandomReference(string $groupName) {
         if (!isset($this->referencesIndex[$groupName])) {
             $this->referencesIndex[$groupName] = [];
@@ -69,10 +77,15 @@ abstract class BaseFixture extends Fixture
         return $this->getReference($randomReferenceKey);
     }
 
-    public function getRandomReferences(string $group, int $count) {
+    /**
+     * @param string $group
+     * @param int $count
+     * @return array
+     */
+    public function getRandomReferences(string $groupName, int $count) {
         $references = [];
         while (count($references) < $count) {
-            $references[] = $this->getReference($group);
+            $references[] = $this->getReference($groupName);
         }
         return ($references);
     }
