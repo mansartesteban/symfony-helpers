@@ -19,7 +19,6 @@ Cette librairie embarque [faker](https://github.com/fzaninotto/Faker)
 Pour installer ce package, il est nécessaire de l'intégrer à un projet symfony ayant le package orm-fixture
 
 - `php` `>=7.3.0`
-- `fzaninotto/faker` `^1.9`
 - `doctrine/doctrine-fixtures-bundle` `^3.3`
 - `symfony/framework-bundle` `5.0.*`
     
