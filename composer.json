@@ -1,0 +1,23 @@
+{
+  "name": "mansartesteban/symfony-base-fixture",
+  "description": "BaseFixture for symfony with helper functions, include fzaninotto/faker",
+  "type": "library",
+
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Esteban",
+      "email": "esteban.mansart@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.3.0",
+    "fzaninotto/faker": "^1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "symfony-base-fixture\\": "src/symfony/BaseFixture"
+    }
+  }
+}
