@@ -6,7 +6,7 @@
  * Time: 10:51
  */
 
-namespace App\DataFixtures;
+namespace MansartEsteban\Symfony;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
