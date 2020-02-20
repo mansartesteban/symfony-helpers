@@ -130,7 +130,7 @@ Et voilà, nous avons créé notre première fixture simplement !
 
 Créons un deuxième fichier de fixtures pour générer les posts des internautes par exemple
 
-`
+```php
     namespace App\DataFixtures;
     
     use App\Entity\Post;
@@ -163,4 +163,4 @@ Créons un deuxième fichier de fixtures pour générer les posts des internaute
         }
     
     }
-`
+``` 
